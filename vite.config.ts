@@ -8,7 +8,9 @@ export default defineConfig({
     dirs: [
       "src/components",
       "src/views/**/*",
-    ]
+    ],
+    deep: true,
+    directoryAsNamespace: true,
   })],
   resolve: {
     alias: {

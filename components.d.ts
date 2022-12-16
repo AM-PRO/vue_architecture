@@ -10,7 +10,7 @@ declare module '@vue/runtime-core' {
     Btn: typeof import('./src/components/Btn.vue')['default']
     Button: typeof import('./src/components/Button.vue')['default']
     Card: typeof import('./src/components/Card.vue')['default']
-    CustomCheckbox: typeof import('./src/components/CustomCheckbox.vue')['default']
+    CustomCheckbox: typeof import('./src/components/CustomCheckbox/Index.vue')['default']
     CustomInput: typeof import('./src/components/CustomInput.vue')['default']
     ErrorText: typeof import('./src/components/ErrorText.vue')['default']
     Index: typeof import('./src/components/CustomCheckbox/Index.vue')['default']
