@@ -51,7 +51,7 @@ export default defineComponent({
         const { value: name } = useField<string>('name');
         const { value: categoryId } = useField<number>('categoryId');
 
-        const onSubmit = handleSubmit(async (values) => {
+        const onSubmit = handleSubmit(async () => {
             await mutateAsync()
             emit("todo-added")
             resetForm()
