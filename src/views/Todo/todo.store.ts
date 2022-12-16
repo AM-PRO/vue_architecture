@@ -1,6 +1,7 @@
 import { reactive, computed, ComputedRef } from "vue";
 import { Todo } from "@/core/entities/todo";
 import { TodoCategory } from "@/core/entities/todoCategory";
+import { Tag } from "@/types/tag";
 
 export interface TodoState {
     todos: Todo[],
@@ -10,6 +11,7 @@ export interface TodoState {
 export interface TodoGetters {
     checkedTodos: Todo[],
     uncheckedTodos: Todo[],
+    categoriesAsTags: Tag[],
 }
 
 export interface TodoStore {
@@ -26,6 +28,13 @@ export const todoGetters: ComputedRef<TodoGetters> = computed(() => {
     return {
         checkedTodos: todoState.todos.filter(todo => todo.done),
         uncheckedTodos: todoState.todos.filter(todo => !todo.done),
+        categoriesAsTags: todoState.categories.map(category => {
+            return {
+                id: category.id,
+                value: category.name,
+                color: category.color,
+            } as Tag
+        })
     }
 })
 

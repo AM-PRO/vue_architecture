@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .input {
-  @apply py-1 px-3 rounded focus:outline-purple-600;
+  @apply py-1 px-3 rounded focus:outline-purple-600 block w-full;
 }

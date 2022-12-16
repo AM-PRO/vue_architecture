@@ -13,6 +13,7 @@ declare module '@vue/runtime-core' {
     CustomCheckbox: typeof import('./src/components/CustomCheckbox.vue')['default']
     CustomInput: typeof import('./src/components/CustomInput.vue')['default']
     ErrorText: typeof import('./src/components/ErrorText.vue')['default']
+    Index: typeof import('./src/components/CustomCheckbox/Index.vue')['default']
     Loading: typeof import('./src/components/Loading.vue')['default']
     Navbar: typeof import('./src/components/Navbar.vue')['default']
     NewTodoForm: typeof import('./src/views/Todo/components/NewTodoForm.vue')['default']

@@ -28,8 +28,6 @@ export default defineComponent({
         const selectedTag = ref<Tag | null | undefined>(null)
 
         watch(props, () => {
-            console.log("watch")
-            console.log(props)
             if (props.modelValue) {
                 selectedTag.value = props.modelValue
             }

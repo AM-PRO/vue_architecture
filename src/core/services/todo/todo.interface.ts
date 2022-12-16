@@ -1,15 +1,16 @@
+import { z } from "zod";
 import { Todo } from "../../entities/todo";
 import { TodoCategory } from "../../entities/todoCategory";
-
-export type AddTodoDTO = {
-    name: string | null;
-    categoryId: number | null;
-}
 
 export type UpdateTodoDTO = {
     id: number;
     name?: string;
     done: boolean;
+}
+
+export type AddTodoDTO = {
+    name: string;
+    categoryId: number;
 }
 
 export interface TodoServiceInterface {
