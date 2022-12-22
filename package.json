@@ -9,7 +9,8 @@
     "dev:mock": "vite --mode mock",
     "test": "vitest",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "cypress": "npx cypress open"
   },
   "dependencies": {
     "@vee-validate/zod": "^4.7.3",
@@ -23,10 +24,12 @@
     "zod": "^3.20.2"
   },
   "devDependencies": {
+    "@types/jest": "^29.2.4",
     "@types/node": "^18.11.15",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vue/test-utils": "^2.2.6",
     "autoprefixer": "^10.4.13",
+    "cypress": "^12.2.0",
     "jsdom": "^20.0.3",
     "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4",

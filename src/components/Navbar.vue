@@ -2,7 +2,7 @@
     <div class="flex gap-4 items-center justify-center bg-purple-700 shadow-lg py-4">
         <router-link class="link" to="/">Accueil</router-link>
         <router-link class="link" to="/todo/list">Todo list</router-link>
-        <router-link v-if="isAuthenticated" class="link" to="/logout">({{user?.fullname}}) Déconnexion</router-link>
+        <router-link v-if="isAuthenticated" class="link logout-link" to="/logout">({{user?.fullname}}) Déconnexion</router-link>
         <router-link v-else="isAuthenticated" class="link" to="/login">Se connecter</router-link>
     </div>
 </template>

@@ -2,6 +2,8 @@ import { reactive, computed, ComputedRef } from "vue";
 import { Todo } from "@/core/entities/todo";
 import { TodoCategory } from "@/core/entities/todoCategory";
 import { Tag } from "@/types/tag";
+import { injectStrict } from "@/composables/injectStrict";
+import { AUTH } from "@/core/services/keys";
 
 export interface TodoState {
     todos: Todo[],

@@ -1,6 +1,6 @@
 <template>
     <div class="flex items-center gap-4">
-        <div :style="getTagStyle(tag)" class="border transition-colors cursor-pointer text-white px-5 py-2 rounded-full"
+        <div :style="getTagStyle(tag)" class="tag border transition-colors cursor-pointer text-white px-5 py-2 rounded-full"
             @click="toggleTag(tag)" v-for="(tag, i) in tags" :key="i">
             {{ tag.value }}
         </div>

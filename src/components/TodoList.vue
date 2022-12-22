@@ -1,7 +1,7 @@
 <template>
     <div class="mb-5">
         <h2 class="text-2xl mb-2">{{ title }}</h2>
-        <ul v-if="todos.length > 0">
+        <ul v-if="todos.length > 0" class="todo-list">
             <li class="flex items-center gap-2 mb-4" v-for="(todo, i) in todos" :key="todo.id">
                 <CustomCheckbox :modelValue="todo.done" @update:modelValue="updateTodo($event, todo)" />
                 <p>{{ todo.name }} - {{ todo.category.name }} - {{ todo.formattedDate }}</p>

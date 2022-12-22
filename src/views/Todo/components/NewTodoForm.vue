@@ -2,7 +2,7 @@
     <div>
         <form @submit.prevent="onSubmit" class="flex gap-5 flex-col">
             <div>
-                <input class="input" v-model="name" type="text" placeholder="Nom de la todo">
+                <input class="todo-name-input input" v-model="name" type="text" placeholder="Nom de la todo">
                 <ErrorText v-if="errors.name">{{ errors.name }}</ErrorText>
             </div>
             <div>
@@ -27,7 +27,7 @@ import { injectStrict } from '@/composables/injectStrict'
 import { TODO } from '@/core/services/keys'
 import { toFormValidator } from '@vee-validate/zod';
 import * as zod from 'zod';
-import { useField, useForm} from 'vee-validate'
+import { useField, useForm } from 'vee-validate'
 
 export default defineComponent({
     setup(props, { emit }) {
